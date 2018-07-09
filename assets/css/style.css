@@ -4,7 +4,6 @@ url('../font/rm-typerighter-medium/rm_typerighter_medium.ttf');
 }
 html {
   background-color: #f8f8f8;
-  font-family: unset;
   font-size: 13px;
 }
 .uk-description-list dt{
@@ -12,7 +11,6 @@ html {
 }
 .uk-navbar-nav li a{
   font-size: 16px !important;
-  font-family: unset;
 }
 .uk-container {
   padding-left: 250px;

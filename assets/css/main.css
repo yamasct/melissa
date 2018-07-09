@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "main_regular";
+  url('../font/playfair-display/PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: "main_bold";
+  url('../font/playfair-display/PlayfairDisplay-Black.otf');
+}
+
+* {
+  font-family: "main_regular";
+}
