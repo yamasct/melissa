@@ -59,8 +59,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="ini-mainbody">
 		<div class="uk-container">
 			<div class="uk-child-width-expand@s uk-text-left" uk-grid>
-		    <div>
-					<img data-src="./assets/images/header.jpg" alt="" width="400" height="200" uk-img>
+		    <div class="uk-width-1-2@m">
+					<img data-src="./assets/images/header.jpg" alt="" width="auto" height="auto" uk-img>
 		    </div>
 		    <div>
 					<dl class="uk-description-list uk-description-list-divider" id="ini-descrip">
@@ -73,8 +73,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    </div>
 			</div>
 			<div class="uk-child-width-expand@s uk-text-left" uk-grid>
-		    <div>
-					<img data-src="./assets/images/header.jpg" alt="" width="400" height="200" uk-img>
+		    <div class="uk-width-1-2@m">
+					<img data-src="./assets/images/header.jpg" alt="" width="auto" height="auto" uk-img>
 		    </div>
 		    <div>
 					<dl class="uk-description-list uk-description-list-divider" id="ini-descrip">
@@ -87,8 +87,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    </div>
 			</div>
 			<div class="uk-child-width-expand@s uk-text-left" uk-grid>
-		    <div>
-					<img data-src="./assets/images/header.jpg" alt="" width="400" height="200" uk-img>
+		    <div class="uk-width-1-2@m">
+					<img data-src="./assets/images/header.jpg" alt="" width="auto" height="auto" uk-img>
 		    </div>
 		    <div>
 					<dl class="uk-description-list uk-description-list-divider" id="ini-descrip">
@@ -101,8 +101,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    </div>
 			</div>
 			<div class="uk-child-width-expand@s uk-text-left" uk-grid>
-		    <div>
-					<img data-src="./assets/images/header.jpg" alt="" width="400" height="200" uk-img>
+		    <div class="uk-width-1-2@m">
+					<img data-src="./assets/images/header.jpg" alt="" width="auto" height="auto" uk-img>
 		    </div>
 		    <div>
 					<dl class="uk-description-list uk-description-list-divider" id="ini-descrip">
@@ -115,8 +115,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		    </div>
 			</div>
 			<div class="uk-child-width-expand@s uk-text-left" uk-grid>
-		    <div>
-					<img data-src="./assets/images/header.jpg" alt="" width="400" height="200" uk-img>
+		    <div class="uk-width-1-2@m">
+					<img data-src="./assets/images/header.jpg" alt="" width="auto" height="auto" uk-img>
 		    </div>
 		    <div>
 					<dl class="uk-description-list uk-description-list-divider" id="ini-descrip">

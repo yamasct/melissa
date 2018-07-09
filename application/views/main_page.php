@@ -12,7 +12,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 	<div class="ini-header" id="ini-header-id">
@@ -60,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="uk-container">
 			<div class="uk-child-width-expand@s uk-text-left" uk-grid>
 		    <div>
-					<img data-src="./assets/images/header.jpg" alt="" width="400" height="200" uk-img>
+					<img data-src="./assets/images/feater.png" alt="" width="auto" height="auto" uk-img>
 		    </div>
 		    <div>
 					<dl class="uk-description-list uk-description-list-divider" id="ini-descrip">
@@ -74,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="uk-child-width-expand@s" uk-grid>
 		    <div class="uk-text-center">
-					<img data-src="./assets/images/header.jpg" alt="" width="200" height="200" uk-img>
+					<img class="ini-img-custom" data-src="./assets/images/1.png" alt="" width="auto" height="auto" uk-img>
 					<dl class="uk-description-list uk-description-list-divider">
 						<dt class="uk-text-center">Melissa appears in trio recital throughout April</dt>
 						<dd class="uk-text-justify">Woodwork, painting, electrical, plumbing, and more. My services
@@ -84,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</dl>
 		    </div>
 				<div class="uk-text-center">
-					<img  data-src="./assets/images/header.jpg" alt="" width="200" height="200" uk-img>
+					<img class="ini-img-custom"  data-src="./assets/images/2.png" alt="" width="auto" height="auto" uk-img>
 					<dl class="uk-description-list uk-description-list-divider">
 						<dt class="uk-text-center">Melissa appears in trio recital throughout April</dt>
 						<dd class="uk-text-justify">Woodwork, painting, electrical, plumbing, and more. My services
@@ -94,7 +93,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</dl>
 		    </div>
 				<div class="uk-text-center">
-					<img data-src="./assets/images/header.jpg" alt="" width="200" height="200" uk-img>
+					<img class="ini-img-custom" data-src="./assets/images/3.png" alt="" width="100%"uk-img>
 					<dl class="uk-description-list uk-description-list-divider">
 						<dt class="uk-text-center">Melissa appears in trio recital throughout April</dt>
 						<dd class="uk-text-justify">Woodwork, painting, electrical, plumbing, and more. My services
@@ -108,10 +107,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<hr></hr>
 		<div class="uk-child-width-expand@s uk-text-left" uk-grid>
 			<div>
-				<img data-src="./assets/images/header.jpg" alt="" width="400" height="200" uk-img>
+				<img data-src="./assets/images/4.png" alt="" width="auto" height="auto" uk-img>
 			</div>
 			<div>
-				<dl class="uk-description-list uk-description-list-divider">
+				<dl class="uk-description-list uk-description-list-divider" id="ini-descrip">
 						<dt>Melissa appears in trio recital throughout April</dt>
 						<dd>Woodwork, painting, electrical, plumbing, and more. My services
 								might be varied, but they all come with the same promise

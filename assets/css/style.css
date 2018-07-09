@@ -4,17 +4,25 @@ url('../font/rm-typerighter-medium/rm_typerighter_medium.ttf');
 }
 html {
   background-color: #f8f8f8;
+  font-family: unset;
   font-size: 13px;
+}
+img {
+  object-fit: cover;
+}
+.ini-img-custom{
+  height: 200px !important;
 }
 .uk-description-list dt{
   font-weight: bold;
 }
 .uk-navbar-nav li a{
   font-size: 16px !important;
+  font-family: unset;
 }
 .uk-container {
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .ini-navmenu{
   margin-bottom: 30px;
@@ -71,6 +79,9 @@ html {
 }
 #ini-descrip{
   margin-top: 20px;
+}
+#ini-descrip dd{
+  padding-top: 20px;
 }
 #ini-load-more{
   padding-top: 50px;
