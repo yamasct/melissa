@@ -247,7 +247,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div> -->
 		<!-- </div>
 	</div> -->
-	<div class="ini-footer">
+
+	<div class="uk-section uk-section-secondary">
+    <div class="uk-container">
+			<div class="uk-child-width-1-2 uk-child-width-1-2@s uk-grid-small uk-light" uk-grid>
+		    <div>
+					<form class="uk-form-horizontal uk-margin-large">
+							<div class="uk-margin">
+								<h3>Sign up for our mailing list.</h3>
+								<label class="uk-form-label" for="form-horizontal-text">Email Address </label>
+				        <div class="uk-form-controls uk-invert">
+				            <input class="uk-input uk-width-1-2 uk-form-small" id="form-horizontal-text" type="text" placeholder="Some text...">
+										<button class="uk-button uk-button-small uk-button-default">Join</button>
+				        </div>
+				    </div>
+					</form>
+				</div>
+		    <div>
+					<h3>&nbsp;</h3>
+					<ul class="uk-iconnav">
+					    <li><a href="#" uk-icon="icon: instagram"></a></li>
+					    <li><a href="#" uk-icon="icon: twitter"></a></li>
+					    <li><a href="#" uk-icon="icon: facebook"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <div class="ini-footer">
 		<div class="uk-container">
 			<form class="uk-form-horizontal uk-margin-large">
 				<span>Sign up for our mailing list.</span>
@@ -260,6 +288,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			    </div>
 			</form>
 		</div>
-	</div>
+	</div> -->
 </body>
 </html>
