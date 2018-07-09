@@ -12,7 +12,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 	<div class="ini-header" id="ini-header-id">
@@ -60,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="uk-container">
 			<div class="uk-flex-first">
 				<div class="uk-panel uk-align-center">
-				    <img class="uk-align-center uk-margin-remove-adjacent" src="./assets/images/header.jpg" width="600" height"600" alt="Example image">
+				    <img class="uk-align-center uk-margin-remove-adjacent" src="./assets/images/feater.png" width="600" height"600" alt="Example image">
 						<div class="uk-align-center ini-lates-desc">
 							<dl class="uk-description-list">
 							    <dt>Melissa appears in trio recital throughout April</dt>
@@ -72,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 				</div>
 				<div class="uk-panel uk-align-center">
-				    <img class="uk-align-center uk-margin-remove-adjacent" src="./assets/images/header.jpg" width="600" height"600" alt="Example image">
+				    <img class="uk-align-center uk-margin-remove-adjacent" src="./assets/images/2.png" width="600" height"600" alt="Example image">
 						<div class="uk-align-center ini-lates-desc">
 							<dl class="uk-description-list">
 							    <dt>Melissa appears in trio recital throughout April</dt>
