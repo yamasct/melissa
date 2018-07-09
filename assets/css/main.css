@@ -4,10 +4,46 @@
 }
 
 @font-face {
-  font-family: "main_bold";
-  url('../font/playfair-display/PlayfairDisplay-Black.otf');
+  font-family: "SCRIPTINS";
+  url('../font/SCRIPTIN/SCRIPTIN.ttf');
 }
 
 * {
+  font-family: "main_regular";
+  font-size: 16px;
+}
+
+/* Global */
+.font-main {
+  font-family: "main_regular";
+}
+
+.font-special {
+  font-family: "SCRIPTINS";
+  color: red;
+}
+
+/* Custom */
+.sct-nav {
+  justify-content: center;
+}
+
+.sct-nav a {
+  font-size: 16px !important;
+  padding: 20px;
+  color: #111 !important;
+}
+
+.sct-main-color, .sct-nav>.uk-active>a { color: #C8932C !important; }
+
+.sct-nav>:nth-child(n+2):not(.uk-first-column)::before{
+  height: 45px;
+  border-color: #aaa;
+}
+
+
+
+/* Replace framework */
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
   font-family: "main_regular";
 }
