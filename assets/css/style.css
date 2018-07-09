@@ -1,0 +1,79 @@
+@font-face {
+font-family: "typewriter";
+url('../font/rm-typerighter-medium/rm_typerighter_medium.ttf');
+}
+html {
+  background-color: #f8f8f8;
+  font-family: unset;
+  font-size: 13px;
+}
+.uk-description-list dt{
+  font-weight: bold;
+}
+.uk-navbar-nav li a{
+  font-size: 16px !important;
+  font-family: unset;
+}
+.uk-container {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+.ini-navmenu{
+  margin-bottom: 30px;
+}
+.ini-mainbody{
+  margin-bottom: 40px;
+}
+.ini-footer{
+  padding-top: 20px;
+  height: auto;
+  background-color: #4a4a4a;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.ini-para p {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.ini-lates-desc{
+  max-width: 550px;
+  margin-bottom: 50px;
+}
+.ini-navbar-little li a{
+  font-size : small;
+}
+.uk-description-list dt{
+  margin-bottom: 5px;
+}
+.ini-about-time{
+  margin-left: -250px;
+  margin-right: -250px;
+}
+.ini-about-time li a{
+  height: 90px;padding-top: 10px;
+  background-color: grey;
+}
+.ini-about-time li{
+  margin-top: 0px !important;
+}
+.ini-about-time li div{
+  padding-bottom:20px;
+  /* margin-top: 0px !important; */
+}
+
+#ini-header-id .uk-background-cover {
+  height: 400px;
+  background-position: top;
+}
+#ini-header-id a {
+  margin-bottom : -15px;
+  margin-right: 5px;
+}
+#ini-descrip{
+  margin-top: 20px;
+}
+#ini-load-more{
+  padding-top: 50px;
+}
