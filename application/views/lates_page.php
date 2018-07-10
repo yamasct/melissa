@@ -30,6 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="uk-section">
 		<div class="uk-container">
 			<ul class="uk-subnav uk-subnav-divider sct-nav" uk-margin>
+				<li><a href='#'>HOME</a></li>
 				<li class="uk-active"><a href='lates'>LATES</a></li>
 				<li><a href="journal">JOURNAL</a></li>
 				<li><a href="about">ABOUT</a></li>
@@ -41,9 +42,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="uk-container">
         <h2 class="uk-text-center sct-main-color">LATEST</h2>
 				<div id="contena">
-
 				</div>
     </div>
+	</div>
+	<div class="uk-section">
+		<div class="uk-container">
+			<div class="uk-align-center uk-text-center">
+				<a class="uk-button uk-button-text sct-main-color" href="#">Load more</a>
+			</div>
+		</div>
 	</div>
 	<div class="uk-section uk-section-secondary">
     <div class="uk-container">
@@ -83,22 +90,53 @@ get_data();
 function get_data(){
 
 title = 'Melissa appears in trio recital throughout April';
-desc = ''
+img = './assets/images/2.png';
+img1 = './assets/images/feater.png';
+desc = 'Woodwork, painting, electrical, plumbing, and more. My services might be varied, but they all come'+
+'with the same promise'+
+'of quality, dedication, and durability. Licensed and insured, I’m an experienced contractor with'+
+'knowledge';
+
+// for (a=0; a<3; a++){
 	html = '<div class="uk-child-width-1-1@m" uk-grid>'+
 			'<div>'+
 					'<div class="uk-card uk-card-default">'+
 							'<div class="uk-card-media-top">'+
-									'<img src="./assets/images/header.jpg" alt="">'+
+									'<img src="'+img1+'" alt="">'+
 							'</div>'+
 							'<div class="uk-card-body">'+
-									'<h3 class="uk-card-title">Media Top</h3>'+
-									'<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>'+
+									'<h3 class="uk-card-title">'+title+'</h3>'+
+									'<p>'+desc+'</p>'+
+									'<div class="uk-grid-small uk-child-width-auto" uk-grid>'+
+											'<div>'+
+													'<a class="uk-button uk-button-text sct-main-color" href="#">Read more</a>'+
+											'</div>'+
+									'</div>'+
+							'</div>'+
+					'</div>'+
+			'</div>'+
+	'</div>'+
+	'<div class="uk-child-width-1-1@m" uk-grid>'+
+			'<div>'+
+					'<div class="uk-card uk-card-default">'+
+							'<div class="uk-card-media-top uk-text-center">'+
+									'<img class="" src="'+img+'" alt="">'+
+							'</div>'+
+							'<div class="uk-card-body">'+
+									'<h3 class="uk-card-title">'+title+'</h3>'+
+									'<p>'+desc+'</p>'+
+									'<div class="uk-grid-small uk-child-width-auto" uk-grid>'+
+											'<div>'+
+													'<a class="uk-button uk-button-text sct-main-color" href="#">Read more</a>'+
+											'</div>'+
+									'</div>'+
 							'</div>'+
 					'</div>'+
 			'</div>'+
 	'</div>';
 
-	$('#contena').html(html);
+	$('#contena').append(html);
+// }
 }
 
 </script>

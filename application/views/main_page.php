@@ -27,7 +27,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="uk-section">
 		<div class="uk-container">
 			<ul class="uk-subnav uk-subnav-divider sct-nav" uk-margin>
-				<li class="uk-active"><a href='lates'>LATES</a></li>
+				<li class="uk-active"><a href='#'>HOME</a></li>
+				<li><a href='lates'>LATES</a></li>
 				<li><a href="journal">JOURNAL</a></li>
 				<li><a href="about">ABOUT</a></li>
 				<li><a href="catalogue">CATALOGUE</a></li>
