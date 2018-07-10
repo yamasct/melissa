@@ -1,10 +1,9 @@
 @font-face {
-font-family: "typewriter";
-url('../font/rm-typerighter-medium/rm_typerighter_medium.ttf');
+font-family: 'scriptin';
+src : url(../font/scriptin/scriptin.ttf);
 }
 html {
   background-color: #f8f8f8;
-  font-family: unset;
   font-size: 13px;
 }
 img {
