@@ -76,6 +76,9 @@ img {
 .uk-accordion > :nth-child(n+2){
   margin-top: 0;
 }
+.uk-button-text::before{
+  border-bottom: 1px solid #C8932C;
+}
 
 #ini-header-id .uk-background-cover {
   height: 400px;

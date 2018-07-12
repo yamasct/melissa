@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="uk-section" >
 		<div class="uk-container">
 			<ul class="uk-subnav uk-subnav-divider sct-nav" uk-margin>
-				<li><a href='#'>HOME</a></li>
+				<li><a href='main'>HOME</a></li>
 				<li><a href='lates'>LATES</a></li>
 				<li><a href="journal">JOURNAL</a></li>
 				<li class="uk-active"><a href="about">ABOUT</a></li>
@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												</div>
 												<div class="timeline-content timeline-card js--fadeInRight">
 													<div class="timeline-img-header">
-														<img class="ini-img-custom" width="auto" src="./assets/images/child.jpg" alt="">
+														<img uk-parallax="blur: 20; sepia: 100; viewport: 2.7" class="ini-img-custom" width="auto" src="./assets/images/child.jpg" alt="">
 													</div>
 													<div class="date">1973</div>
 													<p>Born in Buenos Aires, Argentina,to Jewish Russian immigrant parents</p>
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												</div>
 												<div class="timeline-content timeline-card js--fadeInRight">
 													<div class="timeline-img-header">
-														<img class="ini-img-custom" width="auto" src="./assets/images/child2.jpg" alt="">
+														<img uk-parallax="blur: 20; sepia: 100; viewport: 2.7" class="ini-img-custom" width="auto" src="./assets/images/child2.jpg" alt="">
 													</div>
 													<div class="date">1980</div>
 													<p>Starts piano lessons with his mother and

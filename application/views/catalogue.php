@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="uk-section">
 		<div class="uk-container">
 			<ul class="uk-subnav uk-subnav-divider sct-nav" uk-margin>
-				<li><a href='#'>HOME</a></li>
+				<li><a href='main'>HOME</a></li>
 				<li><a href='lates'>LATES</a></li>
 				<li><a href="journal">JOURNAL</a></li>
 				<li><a href="about">ABOUT</a></li>
@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div id="contena">
 					<div class="uk-child-width-1-3@m" uk-grid>
 						<div>
-				        <div class="uk-card uk-card-default">
+				        <div class="uk-card uk-card-default" uk-parallax="opacity: 0,1; y: 60,0; viewport: 0.3;">
 				            <div class="uk-card-media-top">
 				                <img class="ini-img-custom" src="./assets/images/slider2.jpg" alt="">
 				            </div>
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				        </div>
 				    </div>
 						<div>
-				        <div class="uk-card uk-card-default">
+				        <div class="uk-card uk-card-default" uk-parallax="opacity: 0,1; y: 80,0; viewport: 0.2;">
 				            <div class="uk-card-media-top">
 				                <img class="ini-img-custom" src="./assets/images/11.jpg" alt="">
 				            </div>
@@ -91,7 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				        </div>
 				    </div>
 						<div>
-				        <div class="uk-card uk-card-default">
+				        <div class="uk-card uk-card-default" uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.4;">
 				            <div class="uk-card-media-top">
 				                <img class="ini-img-custom" height="200" src="./assets/images/12.jpg" alt="">
 				            </div>
