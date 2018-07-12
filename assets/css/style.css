@@ -10,7 +10,8 @@ img {
   object-fit: cover;
 }
 .ini-img-custom{
-  height: 200px !important;
+  height: 170px !important;
+  width:100%;
 }
 .uk-description-list dt{
   font-weight: bold;
@@ -66,6 +67,14 @@ img {
 .ini-about-time li div{
   padding-bottom:20px;
   /* margin-top: 0px !important; */
+}
+.uk-accordion-title{
+  background: #404141;
+  padding-top: 20px;
+  color: white;
+}
+.uk-accordion > :nth-child(n+2){
+  margin-top: 0;
 }
 
 #ini-header-id .uk-background-cover {

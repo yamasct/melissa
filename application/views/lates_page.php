@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>melissa</title>
 	<!-- UIkit CSS -->
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css" /> -->
@@ -101,7 +102,7 @@ desc = 'Woodwork, painting, electrical, plumbing, and more. My services might be
 	html = '<div class="uk-child-width-1-1@m" uk-grid>'+
 			'<div>'+
 					'<div class="uk-card uk-card-default">'+
-							'<div class="uk-card-media-top">'+
+							'<div class="uk-card-media-top uk-text-center">'+
 									'<img src="'+img1+'" alt="">'+
 							'</div>'+
 							'<div class="uk-card-body">'+

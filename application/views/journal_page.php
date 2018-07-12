@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>melissa</title>
 	<!-- UIkit CSS -->
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css" /> -->
@@ -31,8 +32,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="uk-container">
 			<ul class="uk-subnav uk-subnav-divider sct-nav" uk-margin>
 				<li><a href='#'>HOME</a></li>
-				<li class="uk-active"><a href='lates'>LATES</a></li>
-				<li><a href="journal">JOURNAL</a></li>
+				<li><a href='lates'>LATES</a></li>
+				<li class="uk-active"><a href="journal">JOURNAL</a></li>
 				<li><a href="about">ABOUT</a></li>
 				<li><a href="catalogue">CATALOGUE</a></li>
 			</ul>
@@ -45,18 +46,63 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 					<div class="uk-grid-match" uk-grid>
 	            <div class="uk-width-1-2@m">
+									<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/4.png);">
+					        </div>
+	            </div>
+	            <div class="uk-width-1-2@m">
+								<article class="uk-article">
+									<!-- <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1> -->
+									<p class="uk-text-lead">Melissa appears in trio recital throughout April</p>
+									<p>Woodwork, painting, electrical, plumbing, and more. My services
+											might be varied, but they all come with the same promise
+											of quality, dedication, and durability. Licensed and insured, I’m an
+											experienced contractor with knowledge</p>
+
+									<div class="uk-grid-small uk-child-width-auto" uk-grid>
+											<div>
+													<a class="uk-button uk-button-text sct-main-color" href="journal_detail">Read more</a>
+											</div>
+									</div>
+								</article>
+	            </div>
+	        </div>
+					<div class="uk-grid-match" uk-grid>
+	            <div class="uk-width-1-2@m">
 									<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/header.jpg);">
 					        </div>
 	            </div>
 	            <div class="uk-width-1-2@m">
 								<article class="uk-article">
 									<!-- <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1> -->
-									<p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+									<p class="uk-text-lead">New animated series: Max & Maestro</p>
+									<p>Woodwork, painting, electrical, plumbing, and more. My services
+											might be varied, but they all come with the same promise
+											of quality, dedication, and durability. Licensed and insured, I’m an
+											experienced contractor with knowledge</p>
 									<div class="uk-grid-small uk-child-width-auto" uk-grid>
 											<div>
-													<a class="uk-button uk-button-text sct-main-color" href="#">Read more</a>
+													<a class="uk-button uk-button-text sct-main-color" href="journal_detail">Read more</a>
+											</div>
+									</div>
+								</article>
+	            </div>
+	        </div>
+					<div class="uk-grid-match" uk-grid>
+	            <div class="uk-width-1-2@m">
+									<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/2.png);">
+					        </div>
+	            </div>
+	            <div class="uk-width-1-2@m">
+								<article class="uk-article">
+									<!-- <h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1> -->
+									<p class="uk-text-lead">May with the Staatskapelle Berlin</p>
+									<p>Woodwork, painting, electrical, plumbing, and more. My services
+											might be varied, but they all come with the same promise
+											of quality, dedication, and durability. Licensed and insured, I’m an
+											experienced contractor with knowledge</p>
+									<div class="uk-grid-small uk-child-width-auto" uk-grid>
+											<div>
+													<a class="uk-button uk-button-text sct-main-color" href="journal_detail">Read more</a>
 											</div>
 									</div>
 								</article>
