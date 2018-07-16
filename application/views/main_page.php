@@ -43,7 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         <div class="uk-grid-match" uk-grid>
             <div class="uk-width-1-2@m">
-								<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/header.jpg);">
+								<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/feater.png);">
 				        </div>
             </div>
             <div class="uk-width-1-2@m">
@@ -69,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			    <div>
 			        <div class="uk-card uk-card-default">
 			            <div class="uk-card-media-top">
-			                <img src="./assets/images/header.jpg" alt="">
+			                <img class="ini-img-custom" src="./assets/images/1.png" alt="">
 			            </div>
 			            <div class="uk-card-body">
 			                <h3 class="uk-card-title">Media Top</h3>
@@ -80,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			    <div>
 			        <div class="uk-card uk-card-default">
 			            <div class="uk-card-media-top">
-			                <img src="./assets/images/header.jpg" alt="">
+			                <img class="ini-img-custom" src="./assets/images/2.png" alt="">
 			            </div>
 			            <div class="uk-card-body">
 			                <h3 class="uk-card-title">Media Top</h3>
@@ -91,7 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			    <div>
 			        <div class="uk-card uk-card-default">
 			            <div class="uk-card-media-top">
-			                <img src="./assets/images/header.jpg" alt="">
+			                <img class="ini-img-custom" src="./assets/images/3.png" alt="">
 			            </div>
 			            <div class="uk-card-body">
 			                <h3 class="uk-card-title">Media Top</h3>
