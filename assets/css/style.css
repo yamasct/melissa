@@ -79,7 +79,35 @@ img {
 .uk-button-text::before{
   border-bottom: 1px solid #C8932C;
 }
-
+.sct-main-button{
+  background-color: #febd14;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.sct-main-button:hover{
+  background-color: #ffb400;
+}
+.sct-left-menu{
+  position: fixed;
+height: 100%;
+}
+.sct-background{
+  height: 100%;
+  background: url(../images/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position: fixed;
+  opacity: 0.7;
+  z-index: -1
+}
+.sct-center-page{
+  margin-top:75%;
+}
 #ini-header-id .uk-background-cover {
   height: 400px;
   background-position: top;
@@ -96,4 +124,9 @@ img {
 }
 #ini-load-more{
   padding-top: 50px;
+}
+#sct-custom-nav{
+  height: 100%;
+  position: fixed;
+  bottom: 0;
 }

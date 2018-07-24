@@ -1,0 +1,188 @@
+html {
+  font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-y: scroll;
+}
+
+body { overflow: hidden; }
+
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
+  margin: 0 0 20px 0;
+  font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: 300;
+  color: #222;
+  text-transform: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* main-style */
+.sct-frame {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.sct-sidebar-left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 240px !important;
+  padding: 10px 40px 60px 40px;
+  border-right: 1px #e5e5e5 solid;
+  overflow: auto;
+}
+
+.sct-sidebar-right {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 0px);
+    width: 200px;
+}
+
+.sct-offcanvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.sct-nav .uk-nav-header {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sct-nav>li.uk-active>a:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    width: 15px;
+    border-top: 1px solid #1e87f0;
+}
+
+.sct-navbar-container:not(.uk-navbar-transparent) {
+    /* background: linear-gradient(to left, #28a5f5, #1e87f0); */
+    background: #fff;
+}
+
+.sct-heading-fragment { position: relative; }
+.sct-heading-fragment>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sct-heading-fragment>a.sct-heading-back {
+  position: absolute;
+  left: -65px;
+}
+
+#sct-notification-box {
+  display: inline-block;
+  position: fixed;
+  bottom: 10px;
+  right: 25px;
+  z-index: 2;
+}
+
+/* .sct-navbar-container:not(.uk-navbar-transparent),
+.sct-navbar-container:not(.uk-navbar-transparent) .uk-navbar-toggle { color: rgba(255,255,255,0.8); } */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* replace ui */
+.uk-container-small {
+    max-width: 650px;
+}
+.uk-container>:last-child {
+    margin-bottom: 0;
+}
+
+.uk-nav-header {
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.uk-nav-default .uk-nav-header {
+    color: #222;
+}
+
+.uk-active { position: relative; }
+.uk-container::after { clear: both; }
+.uk-container::before, .uk-container::after {
+  content: "";
+  display: table;
+}
+
+.uk-offcanvas-page, .uk-offcanvas-container {
+  overflow-x: hidden;
+}
+.uk-offcanvas-overlay {
+  width: 100vw;
+  touch-action: none;
+}
+
+.uk-alert {
+  max-width: 600px;
+  border: 1px solid;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* custom */
+[name=module-lang] { border-color: #f0506e!important; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* responsive */
+@media (max-width: 720px){
+  #sct-notification-box {
+    width: 89%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+@media (min-width: 960px){
+  .sct-sidebar-left+.sct-main {
+    padding-left: 240px;
+  }
+}
+
+@media (min-width: 1200px){
+  .sct-sidebar-right {
+      left: calc(100% + 0px);
+  }
+
+  .sct-sidebar-left+.sct-main {
+    padding-left: 0px;
+  }
+
+  .sct-sidebar-right {
+      left: calc(100% + 20px);
+  }
+}
+
+@media (min-width: 1400px){
+  .sct-sidebar-left+.sct-main {
+      padding-left: 40px;
+  }
+
+  .sct-sidebar-left {
+      width: 300px !important;
+      padding: 0px 45px 60px 45px;
+  }
+
+  .sct-sidebar-right {
+      left: calc(100% + 60px);
+  }
+}
