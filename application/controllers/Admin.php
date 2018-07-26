@@ -167,29 +167,35 @@ class Admin extends CI_Controller {
 	}
 // catalogue area end //
 
-	public function uploadimage($image)
+	public function uploadimage()
 	{
-		$config['upload_path']          = '../assets/images/';
-    $config['allowed_types']        = 'gif|jpg|png';
-    $config['max_size']             = 1000;
-    $config['max_width']            = 1024;
-    $config['max_height']           = 768;
+		$config['upload_path'] = './assets/images/';
+    $config['allowed_types'] = 'gif|jpg|png|doc|txt';
+    $config['max_size'] = 1024 * 8;
 
     $this->load->library('upload', $config);
 
-		if ( ! $this->upload->do_upload())
+    if (!$this->upload->do_upload('userfile'))
     {
-            // $error = array('error' => $this->upload->display_errors());
-            // $this->load->view('upload_form', $error);
-						return false;
+        $status = 'error';
+        $msg = $this->upload->display_errors('', '');
     }
     else
     {
-			return true;
-            // $data = array('upload_data' => $this->upload->data());
-
-            // $this->load->view('upload_success', $data);
+        $data = $this->upload->data();
+        if($data)
+        {
+            $status = "success";
+            $msg = "File successfully uploaded";
+        }
+        else
+        {
+            unlink($data['full_path']);
+            $status = "error";
+            $msg = "Something went wrong when saving the file, please try again.";
+        }
     }
+    echo json_encode(array('status' => $status, 'msg' => $msg));
 		// return true;
 	}
 }

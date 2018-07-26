@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-(!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
+// (!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- UIkit JS -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script> -->
+	<script src="../assets/js/upload_image.js"></script>
 	<script src="../assets/js/uikit.min.js"></script>
 	<script src="../assets/js/uikit-icons.min.js"></script>
 	<script src="../assets/js/jquery-3.3.1.min.js"></script>
@@ -122,7 +123,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- <div class='uk-container'> -->
 						<div class="uk-animation-slide-top-small">
 
-        		<form class="uk-form-horizontal">
+        		<form class="uk-form-horizontal" id="form_inputan">
 							<div class="uk-margin">
 					        <label class="uk-form-label" for="form-stacked-text" >Type</label>
 					        <div class="uk-form-controls">
@@ -180,7 +181,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $( document ).ready(function() {
 cont();
 });
-
+url_image
 function cont(){
 
 	$("body").on("click", '#new_btn', function(){
@@ -297,8 +298,9 @@ function addcatalogue(){
 				 },
          dataType: "json",
          success: function (result) {
-            // console.log(result);
-						location.reload();
+					 if(picture != ''){
+						upload_image();
+					}
          },
 				 error: function(XMLHttpRequest, textStatus, errorThrown) {
 				     console.log(XMLHttpRequest);
@@ -332,7 +334,11 @@ function editcatalogue(){
 				 },
          dataType: "json",
          success: function (result) {
-            location.reload();
+					 if(url_image != picture){
+						upload_image();
+					}else{
+						location.reload();
+					}
          },
 				 error: function(XMLHttpRequest, textStatus, errorThrown) {
 				     console.log(XMLHttpRequest);

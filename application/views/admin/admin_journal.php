@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-(!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
+// (!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script> -->
 	<script src="../assets/js/uikit.min.js"></script>
+	<script src="../assets/js/upload_image.js"></script>
 	<script src="../assets/js/uikit-icons.min.js"></script>
 	<script src="../assets/js/jquery-3.3.1.min.js"></script>
 </head>
@@ -128,7 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<!-- <div class='uk-container'> -->
 						<div class="uk-animation-slide-top-small">
 
-        		<form class="uk-form-horizontal">
+        		<form class="uk-form-horizontal" id="form_inputan">
 					    <div class="uk-margin">
 					        <label class="uk-form-label" for="form-stacked-text" >Title</label>
 					        <div class="uk-form-controls">
@@ -172,6 +173,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $( document ).ready(function() {
 cont();
 });
+
+var url_image;
+
 
 function cont(){
 
@@ -227,6 +231,7 @@ function getselecteddata(id){
 					$('[name="title"]').val(result[0].Title);
 					$('[name="content"]').val(content);
 					$('[name="picture"]').val(result[0].Image);
+					url_image = result[0].Image;
 			 },
 			 error: function(XMLHttpRequest, textStatus, errorThrown) {
 					 console.log(XMLHttpRequest);
@@ -272,7 +277,9 @@ function addjournal(){
          dataType: "json",
          success: function (result) {
             // console.log(result);
-						location.reload();
+						if(picture != ''){
+							upload_image();
+						}
          },
 				 error: function(XMLHttpRequest, textStatus, errorThrown) {
 				     console.log(XMLHttpRequest);
@@ -288,7 +295,7 @@ function editjournal(){
 		var content = $('[name="content"]').val();
 		var upload = $('[name="userfile"]').val();
 		content = content.replace(/\n/g, "<br />") ;
-		// console.log(window.location.host+'/melissa/admin/addjournal');
+uikit.min
 		$.ajax({
          type: "POST",
          url: '/melissa/admin/editjournal',
@@ -302,13 +309,32 @@ function editjournal(){
 				 },
          dataType: "json",
          success: function (result) {
-            console.log(result);
+					  if(url_image != picture){
+							upload_image();
+						}else{
+							location.reload();
+						}
          },
 				 error: function(XMLHttpRequest, textStatus, errorThrown) {
 				     console.log(XMLHttpRequest);
 				  }
      });
 }
-
-
+// function upload_image(){
+// 	var data = new FormData($('#form_inputan')[0]);
+// 	$.ajax({
+// 			 type: "POST",
+// 			 url: '/melissa/admin/uploadimage',
+// 			 data: data,
+// 			 dataType: "json",
+// 			 contentType: false,
+//     	 processData: false,
+// 			 success: function (result) {
+// 					location.reload();
+// 			 },
+// 			 error: function(XMLHttpRequest, textStatus, errorThrown) {
+// 					 console.log(XMLHttpRequest);
+// 				}
+// 	 });
+// }
 </script>
