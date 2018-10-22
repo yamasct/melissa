@@ -139,25 +139,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="uk-container">
 			<div class="uk-child-width-1-2 uk-child-width-1-2@s uk-grid-small uk-light" uk-grid>
 		    <div>
-					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/header.jpg);">
+					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/tulisan.png);">
 					</div>
 				</div>
 		    <div>
-					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/header.jpg);">
+					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/dimensional.png);">
 					</div>
 				</div>
 			</div>
 			<div class="uk-child-width-1-2 uk-child-width-1-3@s uk-grid-small uk-light" uk-grid>
 		    <div>
-					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/header.jpg);">
+					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/ayom.png);">
 					</div>
 				</div>
 		    <div>
-					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/header.jpg);">
+					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/tetratix.png);">
 					</div>
 				</div>
 		    <div>
-					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(./assets/images/header.jpg);">
+					<div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="">
 					</div>
 				</div>
 			</div>

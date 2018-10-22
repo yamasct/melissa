@@ -11,7 +11,7 @@ html, body {
 }
 .timeline::before {
   content: '';
-  background: #FFD37C;
+  background: #9e9e9d;
   width: 1px;
   height: 80%;
   position: absolute;
@@ -71,7 +71,7 @@ html, body {
 .timeline-img {
   width: 30px;
   height: 30px;
-  background: #C8932C;
+  background: #9e9e9d;
   border-radius: 50%;
   position: absolute;
   left: 50%;

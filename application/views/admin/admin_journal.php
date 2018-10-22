@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-// (!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
+(!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</ul>
 		</div>
 		<div class="sct-main uk-section uk-section-default">
-			<div class="uk-container uk-container-small uk-position-relative">
+			<div class="uk-container-custom">
 				<!-- Content -->
 				<div id='form_table'>
 					<div class="uk-animation-slide-top-small">
@@ -106,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 													<td>'.$row->Date.'</td>
 													<td>'.$row->Title.'</td>
 													<td>'.$desc.'</td>
-													<td>'.$row->Image.'</td>
+													<td>'.$row->Image.'	</td>
 													<td>
 														<button id="edit_btn" item="'.$row->ID.'" class="uk-button-primary uk-button-small "><span uk-icon="icon: pencil"></span></button>
 														<div class="uk-button-group">
@@ -126,7 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					</div>
 					<div id='form_input' style="display:none">
-						<!-- <div class='uk-container'> -->
+						<div class='uk-container-custom uk-container'>
 						<div class="uk-animation-slide-top-small">
 
         		<form class="uk-form-horizontal" id="form_inputan">
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					    <button id="can_btn" class="uk-button uk-button-danger">Cancel</button>
 					</p>
 					</div>
-
+				</div>
 				</div>
 
 

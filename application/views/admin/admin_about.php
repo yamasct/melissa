@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-// (!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
+(!isset($_SESSION['boleh'])) ? header('Location: '.base_url()."admin") : '';
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</ul>
 		</div>
 		<div class="sct-main uk-section uk-section-default">
-			<div class="uk-container uk-container-small uk-position-relative">
+			<div class="uk-container-custom uk-container">
 				<!-- Content -->
 				<div id='form_table'>
 					<div class="uk-animation-slide-top-small">
@@ -124,7 +124,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					</div>
 					<div id='form_input' style="display:none">
-						<!-- <div class='uk-container'> -->
+						<div class='uk-containser-custom uk-container'>
 						<div class="uk-animation-slide-top-small">
 
         		<form class="uk-form-horizontal">
@@ -156,6 +156,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					    <button id="ok_btn" class="uk-button sct-main-button">Save</button>
 					    <button id="can_btn" class="uk-button uk-button-danger">Cancel</button>
 					</p>
+					</div>
 					</div>
 
 				</div>

@@ -36,8 +36,9 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   box-sizing: border-box;
   width: 240px !important;
   padding: 10px 40px 60px 40px;
-  border-right: 1px #e5e5e5 solid;
+  /* border-right: 1px #e5e5e5 solid; */
   overflow: auto;
+  background-color: #febd14;
 }
 
 .sct-sidebar-right {
@@ -58,7 +59,7 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 
 .sct-nav .uk-nav-header {
   padding: 8px 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #fff0c7;
 }
 
 .sct-nav>li.uk-active>a:before {
@@ -67,7 +68,7 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
     top: 15px;
     left: -25px;
     width: 15px;
-    border-top: 1px solid #1e87f0;
+    /* border-top: 1px solid #1e87f0; */
 }
 
 .sct-navbar-container:not(.uk-navbar-transparent) {
@@ -101,6 +102,14 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 /* replace ui */
 .uk-container-small {
     max-width: 650px;
+}
+.uk-container-custom {
+    padding-right: 50px;
+    padding-left: 300px;
+}
+.uk-container-custom .uk-container{
+    padding-right: 300px;
+    padding-left: 0 !important;
 }
 .uk-container>:last-child {
     margin-bottom: 0;
@@ -149,6 +158,10 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
     left: 0;
     bottom: 0;
     margin: auto;
+  }
+  .uk-container-custom {
+      padding-right: 5px;
+      padding-left: 5px;
   }
 }
 
